@@ -8,7 +8,7 @@
 
 spring:
     datasource:
-        default-catalog: library
+        default-catalog: spring_boot_library
         jndi-name: jdbc/Library
     jpa:
         database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
@@ -30,7 +30,7 @@ logging:
         javax.faces: warn
         org.omnifaces: warn
         org.springframework.security: warn
-        org.hibernate: warn
-        org.hibernate.type.descriptor.sql: warn
+        org.hibernate: trace
+        org.hibernate.type.descriptor.sql: trace
     file:
-        path: E:\JavaProjects\SpringBootLibrary\log\app.log
+        name: E:\JavaProjects\SpringBootLibrary\log\app.log

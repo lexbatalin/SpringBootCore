@@ -10,7 +10,7 @@ import org.hibernate.annotations.SelectBeforeUpdate;
 import javax.persistence.*;
 
 @Entity
-@Table(catalog = "library")
+@Table(catalog = "spring_boot_library")
 @DynamicUpdate
 @DynamicInsert
 @SelectBeforeUpdate
@@ -82,16 +82,16 @@ public class Book {
     private String descr;
 
     @Column(name = "view_count")
-    private long viewCount;
+    private Long viewCount;
 
     @Column(name = "total_rating")
-    private long totalRating;
+    private Long totalRating;
 
     @Column(name = "total_vote_count")
-    private long totalVoteCount;
+    private Long totalVoteCount;
 
     @Column(name = "avg_rating")
-    private int avgRating;
+    private Integer avgRating;
 
     @Override
     public String toString() {

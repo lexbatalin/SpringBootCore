@@ -11,7 +11,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @EqualsAndHashCode(of = "id")
-@Table(catalog = "library")
+@Table(catalog = "spring_boot_library")
 @Getter
 @Setter
 @DynamicUpdate

@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-@Table(name = "author", catalog = "library")
+@Table(name = "author", catalog = "spring_boot_library")
 @EqualsAndHashCode(of = "id")
 @Getter
 @Setter

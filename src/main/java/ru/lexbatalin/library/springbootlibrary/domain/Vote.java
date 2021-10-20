@@ -11,7 +11,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(catalog = "library")
+@Table(catalog = "spring_boot_library")
 @EqualsAndHashCode(of = "id")
 @Getter
 @Setter
