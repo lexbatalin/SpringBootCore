@@ -81,4 +81,15 @@ public class BookService implements BookDao {
     public Page<Book> search(int pageNumber, int pageSize, String sortField, Sort.Direction sortDirection, String... searchString) {
         return bookRepository.findByNameContainingIgnoreCaseOrAuthorFioContainingIgnoreCaseOrderByName(searchString[0], searchString[0], PageRequest.of(pageNumber, pageSize, Sort.by(sortDirection, sortField)));
     }
+
+    @Override
+    public void updateViewCount(long viewCount, long id) {
+        bookRepository.updateViewCount(viewCount, id);
+    }
+
+    @Override
+    public void updateRating(long totalRating, long totalVoteCount, int avgRating, long id) {
+        bookRepository.updateRating(totalRating, totalVoteCount, avgRating, id);
+
+    }
 }
