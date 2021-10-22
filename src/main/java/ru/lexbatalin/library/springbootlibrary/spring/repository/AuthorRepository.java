@@ -15,5 +15,5 @@ public interface AuthorRepository extends JpaRepository<Author, Long> {
 
     // Page содержит результаты выполнения запроса и служебные данные для постраничности
     // Pageable параметры для постраничности
-    Page<Author> findByFioContainingIgnoreCAseOrderByFio(String fio, Pageable pageable);
+    Page<Author> findByFioContainingIgnoreCaseOrderByFio(String fio, Pageable pageable);
 }
