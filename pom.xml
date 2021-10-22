@@ -9,7 +9,7 @@
     </parent>
     <groupId>ru.lexbatalin.library</groupId>
     <artifactId>SpringBootLibrary</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>SpringBootLibrary</name>
 
@@ -43,6 +43,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
             <version>${spring.version}</version>
         </dependency>
 
