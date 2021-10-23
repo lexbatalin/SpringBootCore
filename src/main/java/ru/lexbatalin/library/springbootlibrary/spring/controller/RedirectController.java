@@ -13,18 +13,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
-@RestController
+@Controller
 @Log
 public class RedirectController {
 
-    @Autowired
-    private AuthorRepository authorRepository;
-
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "", method = RequestMethod.GET)
     public String baseUrlRedirect(HttpServletRequest request, HttpServletResponse response) {
-        List<Author> authorList = authorRepository.findAll();
-        System.out.println(authorList);
-        return "ok";
+        return "redirect:" + request.getRequestURL().append("index.xhtml").toString();
     }
 
 }
